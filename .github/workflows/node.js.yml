@@ -33,7 +33,7 @@ jobs:
           npm install
           npm run build
       - name: Publish to npm
-        run: npm publish
+        run: npm publish --registry=https://registry.npmjs.org/ || npm retry
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
