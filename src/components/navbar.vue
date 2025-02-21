@@ -21,6 +21,10 @@
           class="btn btn-link tooltip tooltip-bottom"
           data-tooltip="保存 Ctrl + S"
           @click="save"><vpd-icon name="save" /> {{ $t('data.actions.save') }}</a>
+        <a
+          class="btn btn-link tooltip tooltip-bottom"
+          data-tooltip="保存 Ctrl + S"
+          @click="upload"><vpd-icon name="upload" /> {{ $t('data.actions.upload') }}</a>
         <select
           class="lang-change"
           @change="changeLang">
